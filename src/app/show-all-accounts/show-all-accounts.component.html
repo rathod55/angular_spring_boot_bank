@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <th>Account Number</th>
+        <th>Customer Name</th>
+        <th>Account Balance</th>
+    </tr>
+    <tr *ngFor="let account of accounts">
+        <td>{{account.accNumber}}</td>
+        <td>{{account.customerName}}</td>
+        <td>{{account.accBalance}}</td>
+    </tr>
+</table>

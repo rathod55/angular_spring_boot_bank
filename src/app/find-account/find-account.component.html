@@ -1,0 +1,25 @@
+<mat-card style="width: fit-content;">
+    <form>
+        <mat-card-content>
+            <mat-form-field>
+                <mat-label>Acc Number</mat-label>
+                <input matInput type="number" placeholder="ACC NO" [(ngModel)]="accNumber" name="acc_no">
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-content>
+            <button mat-flat-button color="warn" (click)="findAccount()"><mat-icon>search</mat-icon></button>
+        </mat-card-content>
+    </form>
+</mat-card>
+<table>
+    <tr>
+        <th>Account Number</th>
+        <th>Customer Name</th>
+        <th>Account Balance</th>
+    </tr>
+    <tr>
+        <td>{{account.accNumber}}</td>
+        <td>{{account.customerName}}</td>
+        <td>{{account.accBalance}}</td>
+    </tr>
+</table>
